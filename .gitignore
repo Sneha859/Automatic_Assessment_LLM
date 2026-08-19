@@ -13,3 +13,7 @@ deployment_requirements.txt
 *.backup
 
 nltk_data_full_backup/
+
+# Local app backups
+app.py.before_ui_fix
+app.py.ui_backup
