@@ -1,9 +1,17 @@
+import os
 import nltk
+
+# Use bundled NLTK data instead of downloading at runtime
+NLTK_DATA_DIR = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..", "..", "nltk_data")
+)
+
+if NLTK_DATA_DIR not in nltk.data.path:
+    nltk.data.path.insert(0, NLTK_DATA_DIR)
+
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 
-nltk.download("punkt")
-nltk.download("stopwords")
 
 stop_words = set(stopwords.words("english"))
 

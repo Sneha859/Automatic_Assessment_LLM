@@ -2,6 +2,15 @@ import streamlit as st
 import numpy as np
 import joblib
 import nltk
+import os
+
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+NLTK_DATA_PATH = os.path.join(BASE_DIR, "nltk_data")
+
+if NLTK_DATA_PATH not in nltk.data.path:
+    nltk.data.path.insert(0, NLTK_DATA_PATH)
+
 
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
@@ -17,11 +26,9 @@ from modules.explanation.explanation_module import generate_explanation
 # NLTK setup
 # ----------------------------
 
-nltk.download("stopwords")
-nltk.download("wordnet")
-
 stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
+
 
 
 # ----------------------------

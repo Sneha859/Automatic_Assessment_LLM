@@ -8,3 +8,8 @@ deployment_requirements.txt
 
 .ipynb_checkpoints/
 .DS_Store
+
+# Local backup files
+*.backup
+
+nltk_data_full_backup/
