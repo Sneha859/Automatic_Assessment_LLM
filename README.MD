@@ -194,6 +194,7 @@ Coverage of important concepts
 Presence of expected concepts
 Adequacy of explanation
 Supporting examples where appropriate
+
 Language — 2 Marks
 
 Evaluates:
@@ -203,6 +204,7 @@ Sentence clarity
 Vocabulary
 Readability
 Overall language quality
+
 Organisation — 3 Marks
 
 Evaluates:
@@ -218,6 +220,7 @@ Language      → 2 marks
 Organisation  → 3 marks
 ────────────────────────
 Total         → 10 marks
+
 🤖 Explanation & Feedback
 
 The system does not simply return a numerical score.
@@ -241,6 +244,7 @@ Why did the system give this score?
 The feedback can identify strengths and areas where the student's response can be improved.
 
 ✨ Key Features
+
 📝 Interactive Assessment
 
 Enter a question and student answer directly through the Streamlit interface.
@@ -264,6 +268,7 @@ Provides separate scores for:
 Content
 Language
 Organisation
+
 💬 AI Evaluation Explanation
 
 Provides reasoning related to the assessment.
@@ -347,6 +352,7 @@ automatic_assessment_deploy/
 ├── deployment_requirements.txt
 ├── README.MD
 └── .gitignore
+
 📦 Model Artifacts
 
 The trained machine-learning artifacts are included in the project:
@@ -360,6 +366,7 @@ These files are required by the deployed application.
 The application loads these models using project-relative paths.
 
 ⚙️ Installation
+
 1. Clone the Repository
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd automatic_assessment_deploy
@@ -371,6 +378,7 @@ Windows
 venv\Scripts\activate
 3. Install Dependencies
 pip install -r requirements.txt
+
 ▶️ Run Locally
 
 Start the Streamlit application:
@@ -380,6 +388,7 @@ streamlit run app.py
 The application will normally be available at:
 
 http://localhost:8501
+
 🖥️ Application Workflow
 Step 1 — Enter Question
 
@@ -394,6 +403,7 @@ Step 3 — Evaluate
 Click:
 
 ✨ Evaluate Answer
+
 Step 4 — View Assessment
 
 The system displays:
@@ -404,6 +414,7 @@ Language score
 Organisation score
 Overall performance
 Assessment insights
+
 Step 5 — View Explanation
 
 An expandable explanation section provides assessment reasoning.
@@ -528,6 +539,7 @@ Machine Learning
 Rubric-Based Assessment
         +
 Automated Feedback
+
 🚧 Future Improvements
 
 Potential future enhancements include:
@@ -542,6 +554,7 @@ Assessment history
 Exportable assessment reports
 Additional transformer models
 Multilingual answer assessment
+
 👩‍💻 Author
 
 Sneha Sivakumar
@@ -549,6 +562,7 @@ Sneha Sivakumar
 Master of Computer Applications (MCA)
 
 Areas of Interest
+
 Artificial Intelligence
 Machine Learning
 Natural Language Processing
